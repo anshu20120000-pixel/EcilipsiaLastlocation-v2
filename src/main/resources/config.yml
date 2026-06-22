@@ -1,0 +1,16 @@
+# EclipsiaLastLocation Configuration
+# ─────────────────────────────────────
+# List every world name where the plugin should save/restore logout locations.
+# Any world NOT listed here is completely ignored (lobby, pvp, minigame worlds, etc.).
+
+enabled-worlds:
+  - world
+  - lifesteal
+
+# Delay (in seconds) before the teleport is executed on join / world change.
+# Increase this if other plugins (EssentialsSpawn, AuthMe, Multiverse) are
+# teleporting the player after the join event and overwriting our teleport.
+teleport-delay: 2
+
+# Prefix used in all plugin messages.
+prefix: "&8[&bELL&8] &r"
