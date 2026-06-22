@@ -1,1 +1,28 @@
+name: EclipsiaLastLocation
+version: ${project.version}
+main: me.eclipsia.lastlocation.EclipsiaLastLocation
+api-version: "1.21"
+description: Lightweight last logout location plugin for SMP servers.
+author: Eclipsia
+website: https://github.com/eclipsia
 
+softdepend:
+  - Multiverse-Core
+  - EssentialsSpawn
+  - AuthMe
+  - FastLogin
+  - DeluxeHub
+
+commands:
+  ell:
+    description: EclipsiaLastLocation main command.
+    usage: /ell <reload>
+    permission: eclipsialastlocation.use
+
+permissions:
+  eclipsialastlocation.reload:
+    description: Allows reloading the plugin config.
+    default: op
+  eclipsialastlocation.use:
+    description: Base command permission.
+    default: op
